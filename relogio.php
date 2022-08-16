@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="data-hora"></div>
+    <div id="data"></div>
     <script>
         const zeroFill = n => {
             return ('0' + n).slice(-2);
@@ -24,7 +24,7 @@
             const now = new Date();
             const dataHora = zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
 
-            document.getElementById('data-hora').innerHTML = dataHora;
+            document.getElementById('data').innerHTML = dataHora;
         }, 1000);
     </script>
 </body>
