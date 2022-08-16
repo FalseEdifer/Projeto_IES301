@@ -9,8 +9,8 @@
 <body>
     <ul>
         <li><a href="adivinhe_numero.php">Jogo adivinhe um número</a></li>
-        <li><a href="ex1.php">Atividade 01 Aula 02</a></li>
-        <li><a href="ex2.php">Atividade 02 Aula 02</a></li>
+        <li><a href="dia.php">Atividade 01 Aula 02</a></li>
+        <li><a href="relogio.php">Atividade 02 Aula 02</a></li>
     </ul>
 </body>
 </html>
