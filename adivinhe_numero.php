@@ -46,7 +46,6 @@
     </body>
 
         <script>
-            // Seu JavaScript vai aqui
             var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
             var palpites = document.querySelector('.palpites');
             var ultimoResultado = document.querySelector('.ultimoResultado');
