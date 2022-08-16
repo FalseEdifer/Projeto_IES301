@@ -7,13 +7,18 @@
 
     <style>
       html {
-        font-family: sans-serif;
+        font-family: Arial;
       }
       body {
         width: 50%;
-        max-width: 800px;
-        min-width: 480px;
+        max-width: 900px;
+        min-width: 580px;
         margin: 0 auto;
+      }
+      h1 {
+        color: yellowgreen;
+        font-style: italic;
+        font-family: 'Lucida Sans';
       }
       .ultimoResultado {
         color: white;
@@ -23,9 +28,9 @@
   </head>
 
   <body>
-        <h1>Jogo adivinhe o número</h1>
+        <h1>Adivinhe o número</h1>
 
-        <p>Nós selecionamos um número aleatório entre 1 e 100. Veja se consegue adivinhar em 10 chances ou menos. Nós lhe diremos se seu palpite foi muito alto ou muito baixo.</p>
+        <p>Selecione um número aleatório entre 1 e 100. Você tem 10 chances. Nós lhe diremos se seu palpite foi muito alto ou muito baixo.</p>
 
         <div class="form">
         <label for="campoPalpite">Digite seu palpite: </label><input type="text" id="campoPalpite" class="campoPalpite">
@@ -60,7 +65,7 @@
                 palpites.textContent += palpiteUsuario + ' ';
                 if(palpiteUsuario === numeroAleatorio) {
                 ultimoResultado.textContent = 'Parabéns! Você acertou!';
-                ultimoResultado.style.backgroundColor = 'green';
+                ultimoResultado.style.backgroundColor = 'lightgreen';
                 baixoOuAlto.textContent = '';
                 configFimDeJogo();
                 } else if(contagemPalpites === 10) {
@@ -69,7 +74,7 @@
                 configFimDeJogo();
                 } else {
                 ultimoResultado.textContent = 'Errado!';
-                ultimoResultado.style.backgroundColor = 'red';
+                ultimoResultado.style.backgroundColor = 'darkred';
                 if(palpiteUsuario < numeroAleatorio) {
                     baixoOuAlto.textContent = 'Seu palpite foi muito baixo!';
                 } else if(palpiteUsuario > numeroAleatorio) {
