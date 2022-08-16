@@ -2,31 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-
     <title>Jogo adivinhe o número</title>
-
-    <style>
-      html {
-        font-family: Arial;
-      }
-      body {
-        width: 50%;
-        max-width: 900px;
-        min-width: 580px;
-        margin: 0 auto;
-      }
-      h1 {
-        color: yellowgreen;
-        font-style: italic;
-        font-family: 'Lucida Sans';
-      }
-      .ultimoResultado {
-        color: white;
-        padding: 3px;
-      }
-    </style>
   </head>
-
   <body>
         <h1>Adivinhe o número</h1>
 
@@ -42,7 +19,6 @@
         <p class="ultimoResultado"></p>
         <p class="baixoOuAlto"></p>
         </div>
-
     </body>
 
         <script>
